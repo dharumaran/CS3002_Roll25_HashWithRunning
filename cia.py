@@ -112,9 +112,9 @@ def receiver(packet, key):
 
 def main():
     while True:
-        print("\n=== MENU ===")
-        print("1. Send (Hash + Running Key Encrypt + Packet)")
-        print("2. Verify (Split Packet + Running Key Decrypt)")
+        print("\nMENU")
+        print("1. Send ")
+        print("2. Verify")
         print("3. Exit")
 
         choice = input("Enter choice: ").strip()
@@ -141,13 +141,13 @@ def main():
                 print(f"[!] {exc}")
                 continue
 
-            print("\n--- Transmission ---")
-            print("Packet:", packet)
+            
+            print("Hashed Output:", packet)
 
         elif choice == "2":
-            packet = input("Enter received packet: ").strip()
+            packet = input("Enter received output: ").strip()
             is_valid = receiver(packet, key)
-            print("\n--- Receiver ---")
+            #print("\n--- Receiver ---")
             if is_valid:
                 print("Authentication SUCCESS (Message is authentic)")
             else:
