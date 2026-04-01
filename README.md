@@ -1,3 +1,9 @@
+# Hash Function With Running Cipher
+Dharini Manimaran
+
+23011102025
+
+3rd Year, B.Tech CSE (IoT)-A
 # The Hash Function
 
 The hash function is a simple function that manipulates the ASCII value of the message using repeated multiplication.
