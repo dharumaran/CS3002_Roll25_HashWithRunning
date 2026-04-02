@@ -10,8 +10,9 @@ PACKET_SEPARATOR = "::"
 
 
 def custom_hash(input_text):
+    reversed_text = input_text[::-1]
     hash_val = 68  # ASCII for D
-    for ch in input_text:
+    for ch in reversed_text:
         hash_val = (hash_val * 31 + ord(ch)) % (2 ** 64)
     return hex(hash_val)[2:]
 
