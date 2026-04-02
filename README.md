@@ -8,6 +8,8 @@ Dharini Manimaran
 
 The hash function is a simple function that manipulates the ASCII value of the message using repeated multiplication.
 
+Start with reversing the string.
+
 For each character:
 - Start with initial value of 68 (ASCII of 'D', my initial)
 - Multiply by 31 (common prime no. choice)
@@ -45,7 +47,7 @@ Running Key: ElliotSimpsons
 Message: HelloWorld
 
 
-Hashed Output: HelloWorldQYMOCICOAETBRW
+Hashed Output: 10::HelloWorldQAWVBWXLOBDTRW
 
 # Example 2:
 
@@ -54,4 +56,4 @@ Running Key: LockAndKey
 Message: abort
 
 
-Hashed Output: 5::abortSXKYKAJW
+Hashed Output: 5::abortSYMLKCRW
